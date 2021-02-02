@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import api from '../../services/api';
 
 import logoImg from '../../assets/logo.svg';
+import github from '../../assets/github.svg';
 
 import { Title, Form, Error, Repositories } from './styles';
 
@@ -72,6 +73,9 @@ const Dashboard: React.FC = () => {
           onChange={e => setNewRepo(e.target.value)}
           placeholder="Digite o nome do repositório"
         />
+        <a href="https://github.com/EdmilsonESF/github-explorer.git">
+          <img src={github} alt="github" />
+        </a>
         <button type="submit">Pesquisar</button>
       </Form>
 

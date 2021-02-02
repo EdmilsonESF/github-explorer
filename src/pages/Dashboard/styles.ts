@@ -20,6 +20,16 @@ export const Form = styled.form<FormProps>`
 
   display: flex;
 
+  a {
+    img {
+      width: 50px;
+
+      position: absolute;
+      left: 2px;
+      top: 2px;
+    }
+  }
+
   input {
     flex: 1;
     height: 70px;
